@@ -1,0 +1,131 @@
+/* --- MOBILE STYLES --- */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--spacing);
+}
+
+.contentTitle {
+  color: var(--text-color);
+  padding-bottom: 10px;
+}
+
+.contactInfo {
+  font-size: 12px;
+  color: var(--secondary-text-color);
+  margin-bottom: var(--sm-spacing);
+  margin-left: 10px;
+}
+
+.contentDescription {
+  font-size: 15px;
+}
+
+.info {
+  font-size: 15px;
+}
+
+.infoDescription {
+  margin-bottom: var(--sm-spacing);
+}
+
+.personalContactInfo {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.mediaWrap {
+  border-left: 2px solid var(--grey);
+  padding-left: var(--sm-spacing);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.formGroup {
+  padding-right: 15px;
+}
+
+.formControl {
+  font-size: 15px;
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  background-color: #161616;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--grey);
+  border-radius: 1px;
+  outline: transparent;
+  color: var(--grey);
+}
+
+.formControl:focus {
+  border-bottom: 1px solid var(--hl-color);
+}
+
+textarea {
+  resize: none;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.icon {
+  color: var(--hl-color);
+  font-size: 28px;
+}
+
+.infoIcon {
+  width: var(--spacing);
+  display: flex;
+  align-items: center;
+}
+
+.infoType {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.infoValue a {
+  color: var(--hl-color);
+}
+
+.contactForm {
+  margin-bottom: var(--sm-spacing);
+}
+
+.contact .socialIcons {
+  display: none;
+}
+
+.mediaWrap a:hover {
+  color: #03b979;
+}
+
+@media (min-width: 400px) {
+  .contactInfo {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 750px) {
+  .contact .socialIcons {
+    display: inline;
+    padding-bottom: var(--sm-spacing);
+  }
+
+  .contact .socialIcons::before,
+  .contact .socialIcons::after {
+    background-color: var(--grey);
+    content: "";
+    height: 2px;
+    width: var(--spacing);
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-right: 10px;
+  }
+}

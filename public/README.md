@@ -14,7 +14,7 @@
   <br />
   <div align="center">
     <a href="https://github.com/mdyeates/react-portfolio">
-      <img src="src/images/logo.svg" alt="Logo" width="200" height="200">
+      <img src="projectImages/logo.svg" alt="Logo" width="200" height="200">
     </a>
     <h3 align="center">My React Portfolio</h3>
     <p align="center">
@@ -175,11 +175,11 @@ Project Link: [https://github.com/mdyeates/react-portfolio](https://github.com/m
 
   <!-- UPDATE PLACEHOLDER IMAGES HERE -->
 
-[product-screenshot]: src/images/screenshot.png
-[product-screenshot2]: src/images/screenshot2.png
-[product-screenshot3]: src/images/screenshot3.png
-[product-screenshot4]: src/images/screenshot4.png
-[responsive-screenshot]: src/images/mobile-screenshot.png
-[responsive-screenshot2]: src/images/mobile-screenshot2.png
-[responsive-screenshot3]: src/images/mobile-screenshot3.png
-[responsive-screenshot4]: src/images/mobile-screenshot4.png
+[product-screenshot]: projectImages/screenshot.png
+[product-screenshot2]: projectImages/screenshot2.png
+[product-screenshot3]: projectImages/screenshot3.png
+[product-screenshot4]: projectImages/screenshot4.png
+[responsive-screenshot]: projectImages/mobile-screenshot.png
+[responsive-screenshot2]: projectImages/mobile-screenshot2.png
+[responsive-screenshot3]: projectImages/mobile-screenshot3.png
+[responsive-screenshot4]: projectImages/mobile-screenshot4.png

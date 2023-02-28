@@ -1,0 +1,44 @@
+/* --- MOBILE STYLES --- */
+
+.landing .name {
+  font-size: 48px;
+}
+.landing .description {
+  font-size: 26px;
+}
+
+.landingImage {
+  right: 0px;
+}
+
+/* .landing .socialIcons {
+  display: none;
+} */
+
+.landing .socialIcons {
+  display: flex;
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media (min-width: 750px) {
+  .landing .name {
+    font-size: 70px;
+  }
+
+  .landing .description {
+    font-size: 32px;
+  }
+
+  .landingImage {
+    bottom: 0;
+    right: 80px;
+  }
+
+  .landing .socialIcons {
+    flex-direction: column;
+  }
+}
