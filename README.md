@@ -13,7 +13,7 @@
 
   <br />
   <div align="center">
-    <a href="https://github.com/mdyeates/react-portfolio">
+    <a href="https://github.com/mdyeates/my-portfolio">
       <img src="src/images/logo.svg" alt="Logo" width="200" height="200">
     </a>
     <h3 align="center">My React Portfolio</h3>
@@ -24,14 +24,14 @@ This portfolio application was built using React and is designed to showcase my 
       Built by: Michael Yeates
       <br/>
       <br/>
-      <a href="https://github.com/mdyeates/react-portfolio"><strong>Explore the docs »</strong></a>
+      <a href="https://github.com/mdyeates/my-portfolio"><strong>Explore the docs »</strong></a>
       <br/>
       <br/>
-      <a href="https://mdyeates.github.io/react-portfolio/">View Live Website</a>
+      <a href="https://michaelyeates.co.uk">View Live Website</a>
       ·
-      <a href="https://github.com/mdyeates/react-portfolio/issues">Report Bug</a>
+      <a href="https://github.com/mdyeates/my-portfolio/issues">Report Bug</a>
       ·
-      <a href="https://github.com/mdyeates/react-portfolio/issues">Request Feature</a>
+      <a href="https://github.com/mdyeates/my-portfolio/issues">Request Feature</a>
     </p>
   </div>
   
@@ -72,13 +72,13 @@ This portfolio application was built using React and is designed to showcase my 
   
   ### Photos
   
-  [![My React Portfolio Screen Shot][product-screenshot]](https://mdyeates.github.io/react-portfolio/)
+  [![My React Portfolio Screen Shot][product-screenshot]](https://michaelyeates.co.uk)
 
-[![My React Portfolio Screen Shot][product-screenshot2]](https://mdyeates.github.io/react-portfolio/)
+[![My React Portfolio Screen Shot][product-screenshot2]](https://michaelyeates.co.uk)
 
-[![My React Portfolio Screen Shot][product-screenshot3]](https://mdyeates.github.io/react-portfolio/)
+[![My React Portfolio Screen Shot][product-screenshot3]](https://michaelyeates.co.uk)
 
-[![My React Portfolio Screen Shot][product-screenshot4]](https://mdyeates.github.io/react-portfolio/)
+[![My React Portfolio Screen Shot][product-screenshot4]](https://michaelyeates.co.uk)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
@@ -111,7 +111,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/mdyeates/react-portfolio.git
+   git clone https://github.com/mdyeates/my-portfolio.git
    ```
 2. Install NPM packages
    ```sh
@@ -127,13 +127,13 @@ To get a local copy up and running follow these simple example steps.
   
   - As demonstrated in the photos below, this application is designed to be responsive and adjust seamlessly to fit various screen sizes
   
-    [![Responsiveness Screenshot][responsive-screenshot]](https://mdyeates.github.io/react-portfolio/)
+    [![Responsiveness Screenshot][responsive-screenshot]](https://michaelyeates.co.uk)
     
-    [![Responsiveness Screenshot][responsive-screenshot2]](https://mdyeates.github.io/react-portfolio/)
+    [![Responsiveness Screenshot][responsive-screenshot2]](https://michaelyeates.co.uk)
 
-    [![Responsiveness Screenshot][responsive-screenshot3]](https://mdyeates.github.io/react-portfolio/)
+    [![Responsiveness Screenshot][responsive-screenshot3]](https://michaelyeates.co.uk)
 
-    [![Responsiveness Screenshot][responsive-screenshot4]](https://mdyeates.github.io/react-portfolio/)
+    [![Responsiveness Screenshot][responsive-screenshot4]](https://michaelyeates.co.uk)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -154,22 +154,22 @@ If you have any inquiries, don't hesitate to reach out to me via socials or by s
 
 <a href="https://www.linkedin.com/in/mdyeates/">LinkedIn</a> | <a href="https://github.com/mdyeates/">GitHub</a>
 
-Project Link: [https://github.com/mdyeates/react-portfolio](https://github.com/mdyeates/react-portfolio)
+Project Link: [https://github.com/mdyeates/my-portfolio](https://github.com/mdyeates/my-portfolio)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
   <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/mdyeates/react-portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/mdyeates/react-portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/mdyeates/react-portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/mdyeates/react-portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/mdyeates/react-portfolio.svg?style=for-the-badge
-[stars-url]: https://github.com/mdyeates/react-portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/mdyeates/react-portfolio.svg?style=for-the-badge
-[issues-url]: https://github.com/mdyeates/react-portfolio/issues
-[license-shield]: https://img.shields.io/github/license/mdyeates/react-portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/mdyeates/react-portfolio/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/mdyeates/my-portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/mdyeates/my-portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mdyeates/my-portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/mdyeates/my-portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/mdyeates/my-portfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/mdyeates/my-portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mdyeates/my-portfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/mdyeates/my-portfolio/issues
+[license-shield]: https://img.shields.io/github/license/mdyeates/my-portfolio.svg?style=for-the-badge
+[license-url]: https://github.com/mdyeates/my-portfolio/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/mdyeates
 
