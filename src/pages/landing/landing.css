@@ -7,7 +7,7 @@
   font-size: 26px;
 }
 
-.landingImage {
+.la {
   right: 0px;
 }
 
@@ -33,9 +33,9 @@
     font-size: 32px;
   }
 
-  .landingImage {
-    bottom: 0;
-    right: 80px;
+  .la {
+    bottom: 100;
+    right: 280px;
   }
 
   .landing .socialIcons {

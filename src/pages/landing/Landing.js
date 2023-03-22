@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import landingImage from "../../images/me.svg";
+import la from "../../images/la.jpg";
 import SocialIcons from "../../components/SocialIcons";
 
 const Landing = ({ name, tagline }) => {
@@ -12,7 +12,7 @@ const Landing = ({ name, tagline }) => {
       alignItems: "center",
     },
 
-    landingImage: {
+    la: {
       position: "absolute",
       bottom: "0",
       opacity: "0.3",
@@ -68,13 +68,13 @@ const Landing = ({ name, tagline }) => {
       </div>
       <div className="image-container">
         <motion.img
-          className="landingImage"
+          className="la"
           ref={ref}
           initial={{ y: "10vw", opacity: 0 }}
           animate={inView ? { y: 0, opacity: 0.4 } : { y: "10vw", opacity: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          style={styles.landingImage}
-          src={landingImage}
+          style={styles.la}
+          src={la}
           alt=""
         />
       </div>

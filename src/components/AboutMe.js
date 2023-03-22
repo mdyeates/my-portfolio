@@ -1,4 +1,4 @@
-import aboutMeImg from "../images/aboutme.jpeg";
+import aboutme from "../images/aboutme.jpg";
 import { motion } from "framer-motion";
 import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
@@ -40,7 +40,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
           animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
-          <img src={aboutMeImg} alt={name} />
+          <img src={aboutme} alt={name} />
         </motion.div>
         <motion.div
           className="personalInfo col-12 col-lg-8"
@@ -50,8 +50,8 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <div className="contentContainer">
-            <h4>Nice to meet you</h4>
-            <h5>Frontend Web Developer who creates amazing digital experiences!</h5>
+            <h4>Nice to meet you!</h4>
+            <h5>I am a Full Stack Software Engineer</h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>
@@ -59,7 +59,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               <div className="row">
                 <div className="col-12 col-md-6 info">
                   <span>Name:</span>
-                  <p>Michael Yeates</p>
+                  <p>James Yi</p>
                 </div>
                 <div className="col-12 col-md-6 info">
                   <span>Email:</span>

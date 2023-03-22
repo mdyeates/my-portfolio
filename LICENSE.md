@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Michael Yeates
+Copyright (c) 2023 James Yu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
