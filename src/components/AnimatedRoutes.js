@@ -20,6 +20,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
             email={personalDetails.email}
             availability={personalDetails.availability}
             brand={personalDetails.brand}
+            skills={personalDetails.skills}
           />
         }
       />
