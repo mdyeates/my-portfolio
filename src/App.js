@@ -5,7 +5,6 @@ function App() {
   const personalDetails = {
     name: "Michael Yeates",
     location: "Loughborough, UK",
-    tagline: "I'm a Developer",
     email: "michael-yeates@outlook.com",
     availability: "Open for work",
     brand:
