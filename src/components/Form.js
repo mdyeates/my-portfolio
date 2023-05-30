@@ -15,7 +15,7 @@ const Form = () => {
     email: "",
     subject: "",
     message: "",
-    access_key: "4f412a8f-0a11-4ba9-8e37-e12661f36602",
+    access_key: process.env.REACT_APP_ACCESS_KEY,
   });
 
   const handleChange = (e) => {
