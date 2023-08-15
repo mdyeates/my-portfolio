@@ -62,7 +62,7 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
         onRequestClose={handleCloseModal}
         style={{
           content: {
-            backgroundColor: "#101010",
+            backgroundColor: "#131a22",
             color: "#9f9f9f",
             padding: "60px",
             display: "flex",
@@ -71,7 +71,7 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
           overlay: {
             zIndex: "9999",
             overflow: "hidden",
-            backgroundColor: "#101010",
+            backgroundColor: "#131a22",
             width: "clamp(50%, 1300px, 100%)",
             height: "min(100%, 800px)",
             margin: "auto",
