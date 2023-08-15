@@ -57,7 +57,7 @@ ul {
   width: 100%;
   padding: 10px 10px;
   border: none;
-  background-color: #161616;
+  background-color: var(--bg-color);
   margin-bottom: 20px;
   border-bottom: 1px solid var(--grey);
   border-radius: 1px;
