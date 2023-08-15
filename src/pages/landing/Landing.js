@@ -32,7 +32,7 @@ const Landing = ({ name }) => {
     },
 
     name: {
-      color: "#fff",
+      color: "var(--text-color)",
       fontWeight: "700",
       marginTop: "-100px",
       paddingBottom: "28px",
@@ -43,30 +43,29 @@ const Landing = ({ name }) => {
     <section className="landing container" style={styles.landing}>
       <Draw />
       <div className="textContainer" style={styles.textContainer}>
-        <h1 className="name" style={styles.name}>
+        <motion.h1
+          className="name"
+          style={styles.name}
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+        >
           {name}
-        </h1>
-        <div className="description">
+        </motion.h1>
+
+        <motion.div
+          className="description"
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        >
           <Typewriter
             className="description"
             onInit={(typewriter) => {
-              typewriter
-                .changeDelay(30)
-                .typeString("I'm a Software Engineer")
-                .pauseFor(1000)
-                .deleteAll()
-                .typeString("Bringing ideas to life")
-                .pauseFor(1000)
-                .deleteAll()
-                .typeString("Code. ")
-                .pauseFor(300)
-                .typeString("Create. ")
-                .pauseFor(300)
-                .typeString("Innovate.")
-                .start();
+              typewriter.changeDelay(50).typeString("Software Engineer").start();
             }}
           />
-        </div>
+        </motion.div>
       </div>
       <div className="image-container">
         <motion.img
@@ -79,7 +78,9 @@ const Landing = ({ name }) => {
           alt="Michael Yeates"
         />
       </div>
-      <SocialIcons />
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}>
+        <SocialIcons />
+      </motion.div>
     </section>
   );
 };
