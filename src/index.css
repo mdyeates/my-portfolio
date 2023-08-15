@@ -162,7 +162,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: var(--sm-spacing);
 }
 
 footer .socialIcons::before,

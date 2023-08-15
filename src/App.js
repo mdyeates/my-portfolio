@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import AnimatedRoutes from "./components/AnimatedRoutes";
-import Footer from "./components/Footer";
 
 function App() {
   const personalDetails = {
@@ -16,7 +15,6 @@ function App() {
     <>
       <Header />
       <AnimatedRoutes personalDetails={personalDetails} />
-      <Footer />
     </>
   );
 }

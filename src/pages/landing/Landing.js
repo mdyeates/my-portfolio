@@ -40,7 +40,7 @@ const Landing = ({ name }) => {
   };
 
   return (
-    <section className="landing" style={styles.landing}>
+    <section className="landing container" style={styles.landing}>
       <Draw />
       <div className="textContainer" style={styles.textContainer}>
         <h1 className="name" style={styles.name}>
@@ -63,7 +63,6 @@ const Landing = ({ name }) => {
                 .typeString("Create. ")
                 .pauseFor(300)
                 .typeString("Innovate.")
-
                 .start();
             }}
           />
