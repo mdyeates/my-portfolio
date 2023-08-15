@@ -2,18 +2,16 @@
 
 .landing .name {
   font-size: 48px;
+  letter-spacing: -3.5px;
 }
 .landing .description {
   font-size: 22px;
+  letter-spacing: 1.5px;
 }
 
 .landingImage {
   right: 0px;
 }
-
-/* .landing .socialIcons {
-  display: none;
-} */
 
 .landing .socialIcons {
   display: flex;
