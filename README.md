@@ -143,6 +143,8 @@ To get a local copy up and running follow these simple example steps.
 
 Distributed under the MIT License. See `LICENSE.md` for more information.
 
+Feel free to utilise my portfolio as a foundation, but please refrain from presenting it or my projects as your own work, thank you.
+
   <p align="right"><a href="#readme-top">back to top</a></p>
   
   
