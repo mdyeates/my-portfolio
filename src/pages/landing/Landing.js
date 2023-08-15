@@ -51,14 +51,17 @@ const Landing = ({ name }) => {
             className="description"
             onInit={(typewriter) => {
               typewriter
-                .changeDelay(80)
+                .changeDelay(30)
                 .typeString("I'm a Software Engineer")
-                .pauseFor(1500)
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString("Bringing ideas to life")
+                .pauseFor(1000)
                 .deleteAll()
                 .typeString("Code. ")
-                .pauseFor(500)
+                .pauseFor(300)
                 .typeString("Create. ")
-                .pauseFor(500)
+                .pauseFor(300)
                 .typeString("Innovate.")
 
                 .start();
