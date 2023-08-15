@@ -72,8 +72,9 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
             zIndex: "9999",
             overflow: "hidden",
             backgroundColor: "#131a22",
-            width: "clamp(50%, 1300px, 100%)",
-            height: "min(100%, 800px)",
+            width: "clamp(30%, 100vw, 100%)",
+            marginRight: "0",
+            height: "min(100%, 100vh)",
             margin: "auto",
           },
         }}
@@ -83,13 +84,17 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
 
           <h3 className="modalTitle">{title}</h3>
 
-          <p className="tech">
-            <em>{technologies}</em>
-          </p>
+          <div className="tech">
+            {technologies.map((technology) => (
+              <span className="technology" key={id}>
+                {technology + " "}
+              </span>
+            ))}
+          </div>
 
           <div className="projectDescription">
-            {description.split("\n").map((paragraph, index) => (
-              <p key={{ index }}>
+            {description.split("\n").map((paragraph, i) => (
+              <p key={{ i }}>
                 {paragraph}
                 <br />
                 <br />

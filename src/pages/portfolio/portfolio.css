@@ -127,6 +127,14 @@
   color: var(--text-color);
 }
 
+.technology {
+  background-color: #4ea6a027;
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: var(--hl-color);
+}
+
 /* --- MEDIA QUEIRES --- */
 
 @media (min-width: 750px) {
