@@ -40,7 +40,7 @@ const Landing = ({ name }) => {
   };
 
   return (
-    <section className="landing" style={styles.landing}>
+    <section className="landing container" style={styles.landing}>
       <Draw />
       <div className="textContainer" style={styles.textContainer}>
         <h1 className="name" style={styles.name}>
@@ -51,16 +51,18 @@ const Landing = ({ name }) => {
             className="description"
             onInit={(typewriter) => {
               typewriter
-                .changeDelay(80)
+                .changeDelay(30)
                 .typeString("I'm a Software Engineer")
-                .pauseFor(1500)
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString("Bringing ideas to life")
+                .pauseFor(1000)
                 .deleteAll()
                 .typeString("Code. ")
-                .pauseFor(500)
+                .pauseFor(300)
                 .typeString("Create. ")
-                .pauseFor(500)
+                .pauseFor(300)
                 .typeString("Innovate.")
-
                 .start();
             }}
           />

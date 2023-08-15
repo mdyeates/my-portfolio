@@ -54,11 +54,13 @@ body {
   font-size: 36px;
   border-bottom: 3px solid var(--hl-color);
   margin-bottom: var(--spacing);
+  letter-spacing: -1.5px;
 }
 
 .pageDescription {
   color: var(--grey);
   font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .socialIcons .icon {
@@ -152,6 +154,26 @@ header {
 
 .links .closed {
   background-color: transparent;
+}
+
+footer {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sm-spacing);
+}
+
+footer .socialIcons::before,
+footer .socialIcons::after {
+  background-color: var(--grey);
+  content: "";
+  height: 2px;
+  width: var(--spacing);
+  display: inline-block;
+  margin-bottom: 7px;
+  margin-right: 10px;
 }
 
 /* --- MEDIA QUERIES --- */
