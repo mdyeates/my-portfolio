@@ -3,7 +3,8 @@
 /* --- VARIABLES --- */
 :root {
   --bg-color: #131a22;
-  --hl-color: #009e66;
+  --hl-color: #48a3c6;
+  --hl2-color: #e47911;
   --text-color: #f3f3f3;
   --secondary-text-color: #9f9f9f;
   --grey: #9f9f9f76;
@@ -84,7 +85,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #03b979;
+  background-color: var(--hl2-color);
 }
 
 /* --- MOBILE STYLES --- */

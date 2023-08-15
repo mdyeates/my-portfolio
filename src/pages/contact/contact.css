@@ -104,7 +104,7 @@ textarea {
 }
 
 .mediaWrap a:hover {
-  color: #03b979;
+  color: var(--hl2-color);
 }
 
 @media (min-width: 400px) {

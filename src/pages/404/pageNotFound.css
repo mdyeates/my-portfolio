@@ -6,11 +6,11 @@
 }
 
 .error .pageTitle {
-  border-bottom-color: red;
+  border-bottom-color: var(--hl2-color);
 }
 
 .error-description {
-  color: red;
+  color: var(--hl2-color);
 }
 
 .error .btn {

@@ -2,9 +2,11 @@
 
 .landing .name {
   font-size: 48px;
+  letter-spacing: -3px;
 }
 .landing .description {
   font-size: 22px;
+  letter-spacing: 1.5px;
 }
 
 .landingImage {
