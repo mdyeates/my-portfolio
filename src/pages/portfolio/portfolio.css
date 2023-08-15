@@ -73,8 +73,9 @@
 }
 
 .closeModal {
-  margin-left: 250px;
-  margin-top: -20px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
 
 .closeModal:hover {
@@ -82,13 +83,48 @@
 }
 
 .modalTitle {
-  text-align: center;
-  margin-bottom: 10px;
+  text-align: left;
+  margin-bottom: var(--sm-spacing);
   color: white;
+  white-space: nowrap;
+  font-size: 30px;
 }
 
 .projectDescription {
-  margin-bottom: 10px;
+  line-height: 2;
+  text-align: left;
+}
+
+.tech {
+  margin-bottom: var(--sm-spacing);
+  text-align: left;
+}
+
+.modalBtns {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.modalBtns .btn {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBtns .btn:last-child {
+  background-color: white;
+  color: black;
+  margin-left: 10px;
+}
+
+.modalBtns .btn:last-child:hover {
+  background-color: var(--hl-color);
+  color: var(--text-color);
 }
 
 /* --- MEDIA QUEIRES --- */

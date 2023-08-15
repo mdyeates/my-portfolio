@@ -1,9 +1,9 @@
 [
   {
-    "title": "Bike Buddy",
+    "title": "Routes",
     "image": "./projectImages/bike.png",
-    "description": "I was responsible for the routing functionality of Bike Buddy, an application that helps parents and guardians keep their children safe while cycling. Utilises the Leaflet.js library and TomTom Routing/Reverse Geolocation API's to create an interactive and visually appealing map that allows a user to plot a route, taking into account various factors such as traffic levels, bicycle lanes, and elevation.",
-    "technologies": "Leaflet | jQuery | Bootstrap",
+    "description": "So, picture this – me and the gang whipped up this awesome thing during my coding bootcamp. It's like the alpha version, you know? And guess what? I totally owned the whole route thingy!\nThe big idea? Keep those kiddos safe while they're out cycling. Like superhero parents and guardians. 🚴‍♀️💨\nI brought in some Leaflet.js magic and TomTom's cool Routing/Reverse Geolocation APIs. What does that mean? Well, hold tight – we've got this super interactive map that's easy on the eyes. You can basically draw out a route, all fancy, while considering stuff like traffic, bike lanes, and how steep the hills are. It's like plotting an adventure – totally kid-safe and fun!",
+    "technologies": "Leaflet.js | jQuery | Bootstrap | HTML | CSS",
     "github": "https://github.com/mdyeates/bike-buddy",
     "deployed": "https://norrinradd8.github.io/bike_buddy/",
     "bgcolor": "#f37737",
@@ -12,18 +12,18 @@
   {
     "title": "Weather",
     "image": "./projectImages/weather.png",
-    "technologies": "jQuery | HTML | CSS",
-    "description": " This dashboard uses the OpenWeatherMap API to retrieve detailed weather data, including the city name, date, weather icon, temperature, humidity, and wind speed. The dashboard has a 5-day forecast feature and a search history feature that saves past searches for easy access. It also has a dark/light theme that changes the look of the page based on day or night in the searched location and uses the geolocation API to automatically determine the user's current location and display the weather.",
+    "technologies": "JavaScript | jQuery | HTML | CSS",
+    "description": "Hey there, I whipped up this app with mobiles in mind, so it's all slick and dandy on any screen. The secret sauce? OpenWeatherMap API! It pulls in all the deets you need: city name, date, cute weather icons, temp, humidity, and even wind speed. But hold on, there's more! ☀️\nPeep the 5-day forecast – it's like a crystal ball for weather nerds. And I got your back with the search history thing. Saves your searches so you don't have to type it all out again.\nWait, there's a rad trick too – the dashboard goes dark or light, depending on if it's sunbathing or stargazing time in the city you're checking. Plus, it's like magic – finds where you are and tells you the weather there. No more guessing if it's raining outside!",
     "github": "https://github.com/mdyeates/weather-app",
     "deployed": "https://mdyeates.github.io/weather-app/",
     "bgcolor": "#29cbe0",
     "id": "2"
   },
   {
-    "title": "Team",
+    "title": "Generator",
     "image": "./projectImages/team.png",
-    "technologies": "JS | Node | Bootstrap | OOP | TTD",
-    "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
+    "technologies": "JavaScript | Node.js | Bootstrap | Testing",
+    "description": "Okay, get this – we're talking about a team dashboard, a snazzy Node command-line thingy. You feed it info about your crew, and it cooks up this super cool HTML page that's like, alive!\nImagine you're the boss – you toss in deets about your peeps, and bam! You've got a webpage that's all lively and stuff. Who needs boring spreadsheets, right? 😉",
     "github": "https://github.com/mdyeates/team-dashboard",
     "deployed": "https://drive.google.com/file/d/1_atUXTM-L9r4NccsrPaaWqPyNu37ftwH/view",
     "bgcolor": "#6c4bf4",
@@ -32,8 +32,8 @@
   {
     "title": "Quiz",
     "image": "./projectImages/quiz.png",
-    "technologies": "JS | HTML | CSS",
-    "description": "A quiz app on the fundamentals of JavaScript. There are 5 randomly selected multiple-choice questions and the user will have a time limit of 50 seconds. The remaining time will determine their score at the end. The user will be penalised by 10 seconds for every incorrect answer.",
+    "technologies": "JavaScript | HTML | CSS",
+    "description": "Yo, check this out – it's like a quiz app but all about JavaScript, the code wizardry stuff. You ready? Cool, here's the deal:\nYou're gonna get hit with 5 random questions, like pop quizzes but cooler. You've got 50 seconds on the clock to prove your skills. And here's the kicker – your score depends on how much time you've got left. So, like, speed is key!\nBut wait, there's a twist – every time you slip up and get a question wrong, I'm gonna snatch away 10 precious seconds from your timer. No pressure, right? 😅",
     "github": "https://github.com/mdyeates/coding-quiz",
     "deployed": "https://mdyeates.github.io/coding-quiz/",
     "bgcolor": "#f85781",
@@ -41,10 +41,10 @@
   },
 
   {
-    "title": "P1",
+    "title": "News",
     "image": "./projectImages/P1.png",
-    "description": "Welcome to P1, your virtual pit stop for the latest updates and standings in the world of F1. But that's not all—we've also got the ultimate card game where driver knowledge is the key to victory.",
-    "technologies": "React | Framer | CSS | Bootstrap | Node",
+    "description": "Hey there, revheads! Say hello to P1, your one-stop virtual hangout for all things F1. We've got the freshest scoop, live standings – you name it. But guess what? There's more! Brace yourself for the coolest card game in town, where being an F1 guru is your golden ticket to winning big.\nBy the way, I'm the styling and animation wizard behind the scenes, conjuring up that sleek and eye-catching look you're loving. And don't forget the news section – that's my baby too. So while you dive into the F1 universe and master the card game, know that I've got you covered with style, animations, and the latest hot-off-the-track updates. 🏎️ 🎉",
+    "technologies": "React | Framer Motion | Bootstrap Grid | HTML | CSS",
     "github": "https://github.com/Jake-W95/P1",
     "deployed": "https://p1-heroes.netlify.app/",
     "bgcolor": "#ffcc33",
@@ -54,8 +54,8 @@
   {
     "title": "Planner",
     "image": "./projectImages/planner.png",
-    "technologies": "JS | Bootstrap | Moment",
-    "description": "Make every hour count with this simple Daily Planner App. You can keep track of all important appointments during a normal 9-5 work day!",
+    "technologies": "JavaScript | Moment.js | Bootstrap | HTML | CSS",
+    "description": "Get ready to seize the day with the Daily Planner App – your trusty sidekick for making every hour count. No more forgetting those important appointments or meetings. This app's got your back with a simple and efficient way to track your schedule, especially when you're grinding it out from 9 to 5!\nAnd guess what? The magic doesn't stop there. This app knows the importance of mood lighting – it changes colours based on the time of day. Talk about setting the right vibes, huh? Oh, and here's the kicker – your todos? Yeah, they're not going anywhere. They're safe and sound, ready for you whenever you need 'em. Time to conquer your day! 📝 ✅",
     "github": "https://github.com/mdyeates/daily-planner",
     "deployed": "https://mdyeates.github.io/daily-planner/",
     "bgcolor": "#3e67ff",

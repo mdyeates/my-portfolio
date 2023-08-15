@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 const Contact = ({ name, email, location }) => {
   return (
     <>
-      <section className="contact">
+      <section className="contact container">
         <PageHeader title="Contact" description="Get in touch" />
         <div className="contactWrap container">
           <div className="row">

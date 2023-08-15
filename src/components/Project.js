@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Modal from "react-modal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import closeModal from "../images/close.svg";
 
 const Project = ({ technologies, title, image, color, id, github, deployed, description }) => {
@@ -21,6 +21,16 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden"; // Disable scrolling when modal is open
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showModal]);
+
   return (
     <motion.div
       ref={ref}
@@ -36,9 +46,9 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
         onClick={handleOpenModal}
       >
         <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
-          <p className="tech">
+          {/* <p className="tech">
             <em>{technologies}</em>
-          </p>
+          </p> */}
           <h3 className="projectTitle">{title}</h3>
           <span className="viewWork">View Work &#8594;</span>
         </div>
@@ -46,6 +56,7 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
           <img src={image} alt="Laptop displaying the application" />
         </div>
       </div>
+
       <Modal
         isOpen={showModal}
         onRequestClose={handleCloseModal}
@@ -56,26 +67,56 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
             padding: "60px",
             display: "flex",
             flexDirection: "column",
-            width: "400px",
-            top: "50%",
-            left: "50%",
-            right: "auto",
-            bottom: "auto",
-            marginRight: "-50%",
-            transform: "translate(-50%, -50%)",
-            zIndex: "999",
+          },
+          overlay: {
+            zIndex: "9999",
+            overflow: "hidden",
+            backgroundColor: "#101010",
+            width: "clamp(50%, 1300px, 100%)",
+            height: "min(100%, 800px)",
+            margin: "auto",
           },
         }}
       >
-        <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
-        <h3 className="modalTitle">{title}</h3>
-        <p className="projectDescription">{description}</p>
-        <button className="btn" onClick={() => (window.location.href = github)}>
-          GitHub Repo
-        </button>
-        <button className="btn" onClick={() => (window.location.href = deployed)}>
-          Live Link
-        </button>
+        <div className="container modal">
+          <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
+
+          <h3 className="modalTitle">{title}</h3>
+
+          <p className="tech">
+            <em>{technologies}</em>
+          </p>
+
+          <div className="projectDescription">
+            {description.split("\n").map((paragraph, index) => (
+              <p key={{ index }}>
+                {paragraph}
+                <br />
+                <br />
+              </p>
+            ))}
+          </div>
+
+          <div className="modalBtns">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1 }}
+              className="btn"
+              onClick={() => (window.location.href = github)}
+            >
+              GitHub
+            </motion.button>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1 }}
+              className="btn"
+              onClick={() => (window.location.href = deployed)}
+            >
+              Live
+            </motion.button>
+          </div>
+        </div>
       </Modal>
     </motion.div>
   );

@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: var(--spacing);
+  overflow: hidden;
 }
 
 .contentTitle {
