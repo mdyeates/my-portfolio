@@ -69,6 +69,14 @@ ul {
   border-bottom: 1px solid var(--hl-color);
 }
 
+.formError {
+  border-bottom: 1px solid var(--hl2-color);
+}
+
+.formError::placeholder {
+  color: var(--hl2-color);
+}
+
 textarea {
   resize: none;
   height: auto;
