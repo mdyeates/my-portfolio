@@ -9,6 +9,7 @@ const Form = () => {
   });
 
   const [success, setSuccess] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -28,6 +29,8 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    setSending(true);
+
     const data = JSON.stringify(formData);
 
     fetch("https://api.web3forms.com/submit", {
@@ -40,6 +43,7 @@ const Form = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        setSending(false);
         setSuccess(true);
         setFormData({
           ...formData,
@@ -115,7 +119,14 @@ const Form = () => {
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">{success ? "Message Sent" : "Send Message"}</button>
+        <motion.button
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.98 }}
+          disabled={sending || success}
+          className="btn"
+        >
+          {sending ? "Please wait..." : success ? "Message Sent" : "Send Message"}
+        </motion.button>
       </div>
     </motion.form>
   );
