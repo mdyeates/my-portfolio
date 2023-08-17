@@ -20,7 +20,7 @@ const NavLinks = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1.3, ease: "easeInOut" }}
+          transition={{ delay: 2.4, duration: 0.5, type: "spring" }}
         >
           <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
             Home
@@ -33,7 +33,7 @@ const NavLinks = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.9, ease: "easeInOut" }}
+          transition={{ delay: 2.3, duration: 0.5, type: "spring" }}
         >
           <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
             Portfolio
@@ -43,7 +43,7 @@ const NavLinks = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ delay: 2.2, duration: 0.5, type: "spring" }}
         >
           <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
             Contact
