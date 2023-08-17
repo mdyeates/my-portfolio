@@ -12,7 +12,13 @@ const Header = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 2, duration: 0.5, type: "spring" }}
         >
-          <img className="logo" src={logo} alt="Michael Yeates' Logo" />
+          <motion.img
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            className="logo"
+            src={logo}
+            alt="Michael Yeates' Logo"
+          />
         </motion.div>
       </NavLink>
       <NavLinks />
