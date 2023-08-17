@@ -1,7 +1,6 @@
 import PageHeader from "../../components/PageHeader";
 import Form from "../../components/Form";
 import ContactInfo from "../../components/ContactInfo";
-import Footer from "../../components/Footer";
 
 const Contact = ({ name, email, location }) => {
   return (
@@ -19,7 +18,6 @@ const Contact = ({ name, email, location }) => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

@@ -73,6 +73,28 @@
   margin-bottom: 10px;
 }
 
+.contentContainer a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.contentContainer .btn {
+  margin-top: var(--sm-spacing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentContainer .btn:hover .arrow-icon {
+  transform: translate(3px, -3px);
+}
+
+.arrow-icon {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: -10px;
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
 @media (min-width: 595px) {
   .contentContainer {
     padding: var(--sm-spacing);

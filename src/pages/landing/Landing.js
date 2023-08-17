@@ -4,7 +4,6 @@ import landingImage from "../../images/suit.png";
 import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
 import About from "../about/About";
-
 const Landing = ({ name }) => {
   const styles = {
     landing: {
