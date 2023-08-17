@@ -167,6 +167,10 @@ footer {
   padding: var(--sm-spacing);
 }
 
+footer p span {
+  color: var(--text-color);
+}
+
 /* --- MEDIA QUERIES --- */
 @media (min-width: 750px) {
   .links {
