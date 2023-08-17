@@ -195,7 +195,7 @@ footer .socialIcons::after {
     margin-left: 3px;
   }
 
-  .links a:not(:last-child) {
+  .links div:not(:last-child) {
     margin-right: 20px;
   }
 
