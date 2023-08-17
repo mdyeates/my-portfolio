@@ -1,4 +1,6 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 import Loader from "./pages/loader/loader";
 import { useState } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
@@ -8,7 +10,6 @@ import About from "./pages/about/About";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
-
 function App() {
   const personalDetails = {
     name: "Michael Yeates",
@@ -58,6 +59,7 @@ function App() {
             <Route path="/page-not-found" element={<PageNotFound />} />
             <Route path="*" element={<Navigate to="/page-not-found" />} />
           </Routes>
+          <Footer />
         </>
       )}
     </>

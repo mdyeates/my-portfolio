@@ -8,7 +8,8 @@
 }
 
 .aboutContainer {
-  border-bottom: 1px solid var(--grey);
+  background-color: var(--bg2-color);
+  padding: var(--spacing) 0;
 }
 
 .personalImage {
@@ -21,7 +22,10 @@
   height: 250px;
   z-index: 50;
   border-radius: 250px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--hl2-color);
+  opacity: 0.5;
+  padding: 10px;
+  filter: contrast(1.2);
 }
 
 .contentContainer {
@@ -39,10 +43,13 @@
   color: var(--text-color);
   font-size: 20px;
   margin-bottom: 15px;
+  letter-spacing: -0.2px;
 }
 
 .contentDescription {
   color: var(--secondary-text-color);
+  letter-spacing: 0.3px;
+  line-height: 1.7;
 }
 
 .infoContainer {
@@ -66,57 +73,50 @@
   margin-bottom: 10px;
 }
 
-.infoContainer a {
-  color: var(--hl-color);
+.contentContainer a {
+  text-decoration: none;
+  color: var(--text-color);
 }
-
-.infoContainer a:hover {
-  color: #03b979;
-}
-
-.buttonContainer {
+.contentContainer .btn {
+  margin-top: var(--sm-spacing);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: var(--sm-spacing);
+  justify-content: center;
 }
 
-.downloadCV {
-  margin-top: var(--sm-spacing);
-  margin-bottom: var(--sm-spacing);
+.contentContainer .btn:hover .arrow-icon {
+  transform: translate(3px, -3px);
 }
 
-.about .socialIcons .icon {
-  display: none;
+.arrow-icon {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: -10px;
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+@media (min-width: 595px) {
+  .contentContainer {
+    padding: var(--sm-spacing);
+  }
 }
 
 @media (min-width: 750px) {
-  .about .socialIcons .icon {
-    display: inline;
-  }
-
-  .about .socialIcons::before {
-    background-color: var(--grey);
-    content: "";
-    height: 2px;
-    width: var(--sm-spacing);
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-right: 10px;
+  .aboutContainer {
+    padding: var(--spacing);
   }
 }
 
 @media (min-width: 992px) {
   .personalImage img {
-    height: 330px;
+    height: 430px;
     z-index: 50;
-    border-radius: 0;
-    padding: 6px;
+    /* border-radius: 0; */
   }
 
   .personalImage {
-    height: 330px;
-
+    margin: auto 0;
+    height: 430px;
     display: flex;
     align-items: center;
     justify-content: center;

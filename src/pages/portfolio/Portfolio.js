@@ -1,9 +1,15 @@
 import projectData from "./projectsData.json";
 import Project from "../../components/Project";
 import PageHeader from "../../components/PageHeader";
-import Footer from "../../components/Footer";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Portfolio = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   const ProjectList = () =>
     projectData.map((project, i) => (
       <Project
@@ -27,7 +33,6 @@ const Portfolio = () => {
           <ProjectList />
         </div>
       </section>
-      <Footer />
     </>
   );
 };
