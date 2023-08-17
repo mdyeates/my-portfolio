@@ -4,8 +4,7 @@ import landingImage from "../../images/suit.png";
 import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
 import About from "../about/About";
-import Portfolio from "../portfolio/Portfolio";
-import Contact from "../contact/Contact";
+
 const Landing = ({ name }) => {
   const styles = {
     landing: {
@@ -49,9 +48,9 @@ const Landing = ({ name }) => {
           <motion.h1
             className="name"
             style={styles.name}
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.1, duration: 0.6, type: "spring" }}
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0, duration: 0.5, type: "spring" }}
           >
             {name}
           </motion.h1>
@@ -64,6 +63,9 @@ const Landing = ({ name }) => {
           >
             <Typewriter
               className="description"
+              options={{
+                cursor: "",
+              }}
               onInit={(typewriter) => {
                 typewriter.changeDelay(50).typeString("Software Engineer").start();
               }}

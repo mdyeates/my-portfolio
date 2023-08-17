@@ -25,6 +25,7 @@
   border: 1px solid var(--hl2-color);
   opacity: 0.5;
   padding: 10px;
+  filter: contrast(1.2);
 }
 
 .contentContainer {
