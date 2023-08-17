@@ -3,8 +3,7 @@ const Footer = () => {
   const currentYear = date.getFullYear();
   return (
     <footer>
-      <p> ✨ Built by Michael Yeates</p>
-      <p>&copy; {currentYear}</p>
+      <p>🚀 Designed & built by Michael Yeates &copy; {currentYear} </p>
     </footer>
   );
 };

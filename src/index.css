@@ -158,23 +158,13 @@ header {
 }
 
 footer {
-  color: var(--text-color);
+  color: var(--hl-color);
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: var(--sm-spacing);
-}
-
-footer .socialIcons::before,
-footer .socialIcons::after {
-  background-color: var(--grey);
-  content: "";
-  height: 2px;
-  width: var(--spacing);
-  display: inline-block;
-  margin-bottom: 7px;
-  margin-right: 10px;
 }
 
 /* --- MEDIA QUERIES --- */
