@@ -48,7 +48,7 @@ const Landing = ({ name }) => {
           style={styles.name}
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          transition={{ delay: 0.1, duration: 0.6, type: "spring" }}
         >
           {name}
         </motion.h1>
@@ -57,7 +57,7 @@ const Landing = ({ name }) => {
           className="description"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
+          transition={{ duration: 0.4, type: "spring" }}
         >
           <Typewriter
             className="description"
@@ -72,7 +72,7 @@ const Landing = ({ name }) => {
           className="landingImage"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.25 }}
-          transition={{ duration: 3.5, ease: "easeInOut" }}
+          transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
           style={styles.landingImage}
           src={landingImage}
           alt="Michael Yeates"
