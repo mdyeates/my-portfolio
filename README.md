@@ -16,10 +16,10 @@
     <a href="https://github.com/mdyeates/my-portfolio">
       <img src="src/images/logo.svg" alt="Logo" width="200" height="200">
     </a>
-    <h3 align="center">My React Portfolio</h3>
+    <h1 align="center">michaelyeates.co.uk</h1>
     <p align="center">
     <br/>
-This portfolio application was built using React and is designed to showcase my projects. It features a dynamic and visually appealing layout. <br/>
+Crafting Connections through Code: Explore my journey, projects, and passions in this immersive portfolio powered by React.<br/>
       <br/>
       Built by: Michael Yeates
       <br/>
@@ -55,12 +55,6 @@ This portfolio application was built using React and is designed to showcase my 
           <li><a href="#installation">Installation</a></li>
         </ul>
       </li>
-      <li>
-          <a href="#usage">Usage</a>
-        <ul>
-          <li><a href="#mobile-responsive">Mobile Responsive</a></li>
-        </ul>
-      </li>
       <li><a href="#license">License</a></li>
       <li><a href="#questions">Questions</a></li>
     </ol>
@@ -72,7 +66,7 @@ This portfolio application was built using React and is designed to showcase my 
   
   ### Photos
   
-  [![My React Portfolio Screen Shot][product-screenshot]](https://michaelyeates.co.uk)
+[![My React Portfolio Screen Shot][product-screenshot]](https://michaelyeates.co.uk)
 
 [![My React Portfolio Screen Shot][product-screenshot2]](https://michaelyeates.co.uk)
 
@@ -84,14 +78,20 @@ This portfolio application was built using React and is designed to showcase my 
   
   ### Built With
   
-  - ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=React&logoColor=61DAFB)
+  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=React&logoColor=61DAFB)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
   ### Description
   
-  This is the initial version of my portfolio website, built with React. It presents a comprehensive showcase of my projects. The design places a strong emphasis on a mobile-first approach, delivering a professional and polished look through the use of a carefully chosen color palette.
-  
+As I take my first step into the vast digital expanse with this portfolio, I invite you to traverse the corridors of my mind, witness the evolution of my skills, and join me in celebrating the boundless horizons that technology opens up. This is more than a portfolio; it's an invitation to explore, learn, and connect. So, immerse yourself and enjoy the journey.
+
+While I wholeheartedly encourage you to utilise my portfolio as a springboard for your own creative ventures, I would like to kindly ask that, in the spirit of fairness and recognition, you provide attribution to <strong>michaelyeates.co.uk</strong>. Your support in acknowledging the origin of this portfolio and the projects showcased within it is greatly appreciated.
+
+In the spirit of fostering an environment of integrity and collaboration, I kindly urge you to abstain from portraying either the portfolio or the projects as products of your own authorship. The energy and time devoted to shaping this portfolio reflect my personal journey and aspirations.
+
+Thank you for your understanding, and for embracing the ethos of creativity, authenticity, and shared respect that underpins our digital community. Your appreciation means a lot! If you like what you see, I'd be truly grateful if you consider giving it a star 🌟
+
   <p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- GETTING STARTED -->
@@ -120,30 +120,12 @@ To get a local copy up and running follow these simple example steps.
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
-  <!-- USAGE EXAMPLES -->
-  
-  ## Usage  
-  ### Mobile Responsive
-  
-  - As demonstrated in the photos below, this application is designed to be responsive and adjust seamlessly to fit various screen sizes
-  
-    [![Responsiveness Screenshot][responsive-screenshot]](https://michaelyeates.co.uk)
-    
-    [![Responsiveness Screenshot][responsive-screenshot2]](https://michaelyeates.co.uk)
-
-    [![Responsiveness Screenshot][responsive-screenshot3]](https://michaelyeates.co.uk)
-
-    [![Responsiveness Screenshot][responsive-screenshot4]](https://michaelyeates.co.uk)
-
-  <p align="right"><a href="#readme-top">back to top</a></p>
-
+ 
   <!-- LICENSE -->
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.md` for more information.
-
-Feel free to utilise my portfolio as a foundation, but please refrain from presenting it or my projects as your own work, thank you.
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
