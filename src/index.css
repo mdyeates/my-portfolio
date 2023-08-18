@@ -159,17 +159,31 @@ header {
 }
 
 footer {
-  color: var(--hl-color);
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--sm-spacing);
+  padding: var(--spacing);
+  text-align: center;
+  color: var(--text-color);
 }
 
 footer p span {
   color: var(--text-color);
+}
+
+footer .footer-link {
+  text-decoration: none;
+  color: var(--hl-color);
+  padding-top: 10px;
+}
+footer .footer-link:hover {
+  color: var(--hl2-color);
+}
+
+footer .socialIcons {
+  padding-top: 10px;
 }
 
 /* --- MEDIA QUERIES --- */
