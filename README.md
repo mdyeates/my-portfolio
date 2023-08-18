@@ -84,13 +84,18 @@ Crafting Connections through Code: Explore my journey, projects, and passions in
   
   ### Description
   
-As I take my first step into the vast digital expanse with this portfolio, I invite you to traverse the corridors of my mind, witness the evolution of my skills, and join me in celebrating the boundless horizons that technology opens up. This is more than a portfolio; it's an invitation to explore, learn, and connect. So, immerse yourself and enjoy the journey.
+This is more than a portfolio; it's an invitation to explore, learn, and connect. So, immerse yourself and enjoy the journey.
 
-While I wholeheartedly encourage you to utilise my portfolio as a springboard for your own creative ventures, I would like to kindly ask that, in the spirit of fairness and recognition, you provide attribution to <strong>michaelyeates.co.uk</strong>. Your support in acknowledging the origin of this portfolio and the projects showcased within it is greatly appreciated.
+While I wholeheartedly encourage you to utilise my portfolio as a springboard for your own creative ventures, I would like to kindly ask that, in the spirit of fairness and recognition, you provide attribution to <strong>michaelyeates.co.uk</strong>. Your support in acknowledging the origin of this portfolio is greatly appreciated.
 
-In the spirit of fostering an environment of integrity and collaboration, I kindly urge you to abstain from portraying either the portfolio or the projects as products of your own authorship. The energy and time devoted to shaping this portfolio reflect my personal journey and aspirations.
+I kindly urge you to abstain from portraying either the portfolio or the projects as products of your own authorship. The energy and time devoted to shaping this portfolio reflect my personal journey and aspirations.
 
-Thank you for your understanding, and for embracing the ethos of creativity, authenticity, and shared respect that underpins our digital community. Your appreciation means a lot! If you like what you see, I'd be truly grateful if you consider giving it a star 🌟
+Thank you for your understanding, and for embracing the ethos of creativity, authenticity, and shared respect that underpins our digital community. Your appreciation means a lot!
+
+If you like what you see, I'd be truly grateful if you consider giving it a star 🌟
+
+<h3>TL;DR</h3>
+Feel free to fork this repo for your own purposes, provided you give me credit.
 
   <p align="right"><a href="#readme-top">back to top</a></p>
 
