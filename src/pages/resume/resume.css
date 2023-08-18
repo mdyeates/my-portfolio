@@ -1,0 +1,16 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin-top: var(--spacing);
+  padding-bottom: var(--spacing);
+}
+
+.brand {
+  font-size: 30px;
+  color: var(--text-color);
+  padding: var(--spacing);
+  margin: var(--sm-spacing);
+  text-align: center;
+}

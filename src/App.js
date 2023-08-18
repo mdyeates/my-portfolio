@@ -6,10 +6,11 @@ import { useState } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 
 import Landing from "./pages/landing/Landing";
-import About from "./pages/about/About";
 import Portfolio from "./pages/portfolio/Portfolio";
+import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
+
 function App() {
   const personalDetails = {
     name: "Michael Yeates",
@@ -33,19 +34,9 @@ function App() {
           <Header />
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
-            <Route
-              path="/about"
-              element={
-                <About
-                  name={personalDetails.name}
-                  location={personalDetails.location}
-                  email={personalDetails.email}
-                  availability={personalDetails.availability}
-                  brand={personalDetails.brand}
-                />
-              }
-            />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume brand={personalDetails.brand} />} />
+
             <Route
               path="/contact"
               element={
