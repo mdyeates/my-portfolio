@@ -1,5 +1,7 @@
-import PageHeader from "../../components/PageHeader";
 import { Link } from "react-router-dom";
+// Components
+import PageHeader from "../../components/PageHeader";
+import Button from "../../components/Button";
 
 const PageNotFound = () => {
   return (
@@ -11,7 +13,7 @@ const PageNotFound = () => {
             <p>Sorry, the page you are looking for does not exist.</p>
             <p>Please double-check the URL or navigate to another section of the site.</p>
             <Link to="/" className="home">
-              <button className="btn">Return to Home</button>
+              <Button name="Return to Home" />
             </Link>
           </div>
         </div>

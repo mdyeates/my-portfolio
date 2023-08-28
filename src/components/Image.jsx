@@ -14,6 +14,7 @@ export default function Image({ src, height, width, size, alt, opacity }) {
     >
       <img
         src={src}
+        className="fadeIn"
         style={{
           display: loading ? "none" : "block",
           width: "100%",
