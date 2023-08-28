@@ -25,15 +25,14 @@ const ProjectDetails = () => {
   }
 
   return (
-    <main className="portfolio">
+    <main className="container portfolio">
       <PageHeader title={project.title} description={project.description} />
-
-      <div className="container ">
+      <div className=" projectDetails">
         <div className="row">
-          <div className="col-12 col-xl-6">
-            <Image src={project.image2} alt={project.name} className="projectImage" opacity="0.5" />
+          <div className="col-12 col-xl-4 projectImage">
+            <Image src={project.image2} alt={project.name} opacity="0.5" />
           </div>
-          <div className="col-12 col-xl-6 projectDetails">
+          <div className="col-12 col-xl-8 projectBodyContainer">
             <div className="tech">
               {project.technologies.map((technology, i) => (
                 <motion.span
@@ -41,7 +40,7 @@ const ProjectDetails = () => {
                   className="technology"
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: i * 0.5, ease: "easeInOut" }}
+                  transition={{ duration: 0.5, delay: i * 0.1, ease: "easeInOut" }}
                 >
                   {technology + " "}
                 </motion.span>
@@ -55,7 +54,7 @@ const ProjectDetails = () => {
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: i * 0.8, ease: "easeInOut" }}
+                  transition={{ duration: 0.5, delay: i * 0.3, ease: "easeInOut" }}
                 >
                   {paragraph}
                 </motion.p>
@@ -66,24 +65,16 @@ const ProjectDetails = () => {
               style={{ display: "flex", gap: "10px" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: project.body.split("\n").length * 0.8 }}
+              transition={{ duration: 0.5, delay: project.body.split("\n").length * 0.3 }}
             >
               <a href={project.github}>
-                <Button name="GitHub" />
+                <Button name="View Code" />
               </a>
               <a href={project.deployed}>
-                <Button name="Live" />
+                <Button name="View Site" />
               </a>
-            </motion.div>
-
-            <motion.div
-              style={{ display: "flex", gap: "10px" }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: project.body.split("\n").length * 0.8 + 0.5 }}
-            >
               <Link to="/portfolio">
-                <Button name="Back to Portfolio" color="var(--hl2-color)" />
+                <Button name="Go Back" color="var(--hl2-color)" />
               </Link>
             </motion.div>
           </div>
