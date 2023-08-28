@@ -6,7 +6,6 @@
   align-items: center;
   overflow: hidden;
   margin-top: var(--spacing);
-  padding-bottom: var(--spacing);
 }
 
 .projectCard {
@@ -89,8 +88,15 @@
 
 .projectDetails {
   background-color: var(--bg2-color);
-  padding: var(--spacing);
   text-align: center;
+  padding: var(--spacing) 10px;
+  margin: 0;
+  margin-bottom: var(--spacing);
+}
+
+.projectImage {
+  margin-bottom: var(--spacing);
+  padding: 0px;
 }
 
 .projectBody {
@@ -193,5 +199,20 @@
 
   .tech {
     font-size: 14px;
+  }
+
+  .projectDetails {
+    padding: var(--spacing);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projectImage {
+    margin-bottom: 0;
+  }
+
+  .projectBodyContainer {
+    padding: 0 var(--spacing);
   }
 }
