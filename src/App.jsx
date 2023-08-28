@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 
 // Components
@@ -25,6 +25,14 @@ function App() {
   const location = useLocation();
 
   const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setShowLoader(true);
+    } else {
+      setShowLoader(false);
+    }
+  }, [location]);
 
   return (
     <>

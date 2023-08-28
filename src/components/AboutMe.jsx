@@ -1,8 +1,10 @@
-import aboutMeImg from "../images/aboutme.jpeg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { NavLink } from "react-router-dom";
-import { FiArrowUpRight } from "react-icons/fi";
+// Components
+import Button from "./Button";
+// Assets
+import aboutMeImg from "../images/aboutme.jpeg";
 
 const AboutMe = ({ name }) => {
   const [ref, inView] = useInView({
@@ -71,12 +73,7 @@ const AboutMe = ({ name }) => {
                 </motion.p>
               </motion.div>
               <NavLink to="/portfolio">
-                <motion.button className="btn" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.99 }}>
-                  <p>View Portfolio</p>
-                  <div>
-                    <FiArrowUpRight whileHover={{ scale: 4 }} className="arrow-icon" />
-                  </div>
-                </motion.button>
+                <Button buttonName="View Portfolio" />
               </NavLink>
             </motion.div>
           </div>

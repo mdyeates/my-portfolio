@@ -83,10 +83,21 @@ body {
   border-radius: 20px;
   margin-top: 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn:hover {
   background-color: var(--hl2-color);
+}
+
+.btn:hover .arrow-icon {
+  transform: translate(3px, -3px);
+}
+
+a {
+  text-decoration: none;
 }
 
 /* --- MOBILE STYLES --- */
@@ -118,7 +129,6 @@ header {
 }
 
 .links a {
-  text-decoration: none;
   color: var(--text-color);
   font-size: 15px;
   display: flex;

@@ -101,7 +101,7 @@
   text-align: left;
 }
 
-.modalBtns {
+/* .modalBtns {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -126,7 +126,7 @@
 .modalBtns .btn:last-child:hover {
   background-color: var(--hl-color);
   color: var(--text-color);
-}
+} */
 
 .technology {
   background-color: #4ea6a027;

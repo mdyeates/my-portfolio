@@ -2,6 +2,8 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import validator from "email-validator";
+// Components
+import Button from "./Button";
 
 const Form = () => {
   const [ref, inView] = useInView({
@@ -178,16 +180,20 @@ const Form = () => {
           placeholder={`${messageError ? "Please enter a message" : "Message"}`}
         ></textarea>
       </div>
-      <div className="col-12 formGroup formSubmit">
-        <motion.button
+      <motion.div className="col-12 formGroup formSubmit">
+        {/* <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
           disabled={nameError || messageError || emailError || subjectError || sending || success}
           className="btn"
         >
           {handleButtonText()}
-        </motion.button>
-      </div>
+        </motion.button> */}
+        <Button
+          name={handleButtonText()}
+          disabled={nameError || messageError || emailError || subjectError || sending || success}
+        />
+      </motion.div>
     </motion.form>
   );
 };

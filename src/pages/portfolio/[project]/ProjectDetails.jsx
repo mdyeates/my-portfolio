@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 // Components
 import PageHeader from "../../../components/PageHeader";
 import PageNotFound from "../../404/PageNotFound";
+import Button from "../../../components/Button";
 // Data
 import projectData from "../projectsData.json";
 
@@ -28,13 +29,13 @@ const ProjectDetails = () => {
         <p className="projectBody">{project.body}</p>
 
         <a href={project.github}>
-          <button className="btn">Github</button>
+          <Button name="GitHub" />
         </a>
         <a href={project.deployed}>
-          <button className="btn">Live</button>
+          <Button name="Live" />
         </a>
         <Link to="/portfolio">
-          <button className="btn">Back to Portfolio</button>
+          <Button name="Back to Portfolio" />
         </Link>
       </div>
     </div>
