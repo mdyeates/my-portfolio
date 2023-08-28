@@ -136,6 +136,7 @@ const Form = () => {
           id="contactName"
           name="name"
           placeholder={`${nameError ? "Please enter your name" : "Name"}`}
+          autoComplete="name"
         />
       </div>
       <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
@@ -150,6 +151,7 @@ const Form = () => {
           id="contactEmail"
           name="email"
           placeholder={`${emailError ? "Please enter a valid email" : "Email"}`}
+          autoComplete="email"
         />
       </div>
       <div className="col-12 formGroup">
@@ -164,6 +166,7 @@ const Form = () => {
           id="contactSubject"
           name="subject"
           placeholder={`${subjectError ? "Please enter a subject" : "Subject"}`}
+          autoComplete="off"
         />
       </div>
       <div className="col-12 formGroup">
@@ -178,6 +181,7 @@ const Form = () => {
           id="contactMessage"
           rows="5"
           placeholder={`${messageError ? "Please enter a message" : "Message"}`}
+          autoComplete="off"
         ></textarea>
       </div>
       <motion.div className="col-12 formGroup formSubmit">
