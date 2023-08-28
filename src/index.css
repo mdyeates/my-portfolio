@@ -97,7 +97,7 @@ body {
   border: none;
   font-size: 14px;
   padding: 12px var(--sm-spacing);
-  border-radius: 10px;
+  border-radius: 30px;
   margin-top: 10px;
   cursor: pointer;
   display: flex;

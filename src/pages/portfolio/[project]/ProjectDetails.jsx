@@ -1,5 +1,6 @@
 import { useParams, Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 // Components
 import PageHeader from "../../../components/PageHeader";
 import PageNotFound from "../../404/PageNotFound";
@@ -35,29 +36,56 @@ const ProjectDetails = () => {
           <div className="col-12 col-xl-6 projectDetails">
             <div className="tech">
               {project.technologies.map((technology, i) => (
-                <span key={i} className="technology">
+                <motion.span
+                  key={i}
+                  className="technology"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: i * 0.5, ease: "easeInOut" }}
+                >
                   {technology + " "}
-                </span>
+                </motion.span>
               ))}
             </div>
 
             <div className="projectBody">
               {project.body.split("\n").map((paragraph, i) => (
-                <p className="paragraph" key={i}>
+                <motion.p
+                  className="paragraph"
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: i * 0.8, ease: "easeInOut" }}
+                >
                   {paragraph}
-                </p>
+                </motion.p>
               ))}
             </div>
 
-            <a href={project.github}>
-              <Button name="GitHub" />
-            </a>
-            <a href={project.deployed}>
-              <Button name="Live" />
-            </a>
-            <Link to="/portfolio">
-              <Button name="Back to Portfolio" />
-            </Link>
+            <motion.div
+              style={{ display: "flex", gap: "10px" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: project.body.split("\n").length * 0.8 }}
+            >
+              <a href={project.github}>
+                <Button name="GitHub" />
+              </a>
+              <a href={project.deployed}>
+                <Button name="Live" />
+              </a>
+            </motion.div>
+
+            <motion.div
+              style={{ display: "flex", gap: "10px" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: project.body.split("\n").length * 0.8 + 0.5 }}
+            >
+              <Link to="/portfolio">
+                <Button name="Back to Portfolio" color="var(--hl2-color)" />
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>
