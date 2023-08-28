@@ -168,6 +168,25 @@ header {
   background-color: transparent;
 }
 
+.toggleMode {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  margin-left: 10px;
+  display: none;
+}
+
+.toggleIcon {
+  scale: 2;
+  cursor: pointer;
+}
+
+.toggleIcon:hover {
+  color: var(--hl-color);
+}
+
+/* --- FOOTER --- */
 footer {
   font-size: 14px;
   display: flex;
@@ -255,5 +274,9 @@ footer .socialIcons {
 
   .closed {
     background-color: transparent;
+  }
+
+  .toggleMode {
+    display: inline-block;
   }
 }

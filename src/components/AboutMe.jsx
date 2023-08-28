@@ -53,16 +53,16 @@ const AboutMe = ({ name }) => {
               >
                 <motion.p variants={paragraphVariants}>
                   Today, I find myself knee-deep in an exhilarating chapter of my journey as a degree apprentice at the
-                  tech titan, <span style={{ color: "white" }}> Amazon</span>. My playground? The captivating universe
-                  of <span style={{ color: "white" }}> Alexa</span>.
+                  tech titan, <span style={{ color: "var(--hl-color)" }}> Amazon</span>. My playground? The captivating
+                  universe of <span style={{ color: "var(--hl-color)" }}> Alexa</span>.
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Here, I don my <span style={{ color: "white" }}> problem-solving </span>
+                  Here, I don my <span style={{ color: "var(--hl-color)" }}> problem-solving </span>
                   cape and dive headfirst into real-world challenges, all while relentlessly pursuing a{" "}
-                  <span style={{ color: "white" }}> Digital and Technology Solutions</span> degree from the University
-                  of Roehampton. So here I am, juggling bits of binary and real-life conundrums, all while crafting my
-                  own success story.
+                  <span style={{ color: "var(--hl-color)" }}> Digital and Technology Solutions</span> degree from the
+                  University of Roehampton. So here I am, juggling bits of binary and real-life conundrums, all while
+                  crafting my own success story.
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
@@ -73,7 +73,7 @@ const AboutMe = ({ name }) => {
                 </motion.p>
               </motion.div>
               <NavLink to="/portfolio">
-                <Button buttonName="View Portfolio" />
+                <Button name="View Portfolio" />
               </NavLink>
             </motion.div>
           </div>

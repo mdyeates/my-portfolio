@@ -4,19 +4,19 @@ import PageHeader from "../../../components/PageHeader";
 import PageNotFound from "../../404/PageNotFound";
 import Button from "../../../components/Button";
 // Data
-import projectData from "../projectsData.json";
+import projects from "../../../_data/projects.json";
 
 const ProjectDetails = () => {
   const { projectTitle } = useParams();
 
-  const project = projectData.find((project) => project.title.toLowerCase() === projectTitle);
+  const project = projects.find((project) => project.title.toLowerCase() === projectTitle);
 
   if (!project) {
     return <PageNotFound />;
   }
 
   return (
-    <div className="portfolio">
+    <main className="portfolio">
       <PageHeader title={project.title} description={project.description} />
 
       <div className="container">
@@ -28,6 +28,8 @@ const ProjectDetails = () => {
 
         <p className="projectBody">{project.body}</p>
 
+        <img src={project.image} height={250} alt={project.name} />
+
         <a href={project.github}>
           <Button name="GitHub" />
         </a>
@@ -38,7 +40,7 @@ const ProjectDetails = () => {
           <Button name="Back to Portfolio" />
         </Link>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -2,7 +2,6 @@ import NavLinks from "./NavLinks";
 import logo from "../images/logo.svg";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-
 const Header = () => {
   return (
     <header className="header container">

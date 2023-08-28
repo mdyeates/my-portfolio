@@ -27,9 +27,7 @@ function App() {
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
-    if (location.pathname === "/") {
-      setShowLoader(true);
-    } else {
+    if (location.pathname !== "/") {
       setShowLoader(false);
     }
   }, [location]);

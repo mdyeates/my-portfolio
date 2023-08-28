@@ -14,10 +14,10 @@ const Landing = ({ name }) => {
 
   return (
     <>
-      <section className="landing container" style={styles.landing}>
+      <main className="landing container" style={styles.landing}>
         <Draw />
         <Hero name={name} />
-      </section>
+      </main>
       <About />
     </>
   );

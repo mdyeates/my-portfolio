@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
-const ProjectCard = ({ technologies, title, image, color, id, github, deployed, description }) => {
+const ProjectCard = ({ title, image, color, id }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
