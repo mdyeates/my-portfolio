@@ -16,6 +16,7 @@ const Portfolio = () => {
   const ProjectList = () =>
     projectData.map((project) => (
       <ProjectCard
+        key={project.id}
         title={project.title}
         technologies={project.technologies}
         image={project.image}
