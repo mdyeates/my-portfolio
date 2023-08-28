@@ -1,8 +1,10 @@
-import projectData from "./projectsData.json";
-import Project from "../../components/Project";
-import PageHeader from "../../components/PageHeader";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+// Components
+import ProjectCard from "../../components/ProjectCard";
+import PageHeader from "../../components/PageHeader";
+// Data
+import projectData from "./projectsData.json";
 
 const Portfolio = () => {
   const location = useLocation();
@@ -10,11 +12,10 @@ const Portfolio = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
   const ProjectList = () =>
-    projectData.map((project, i) => (
-      <Project
-        key={i}
-        id={project.id}
+    projectData.map((project) => (
+      <ProjectCard
         title={project.title}
         technologies={project.technologies}
         image={project.image}

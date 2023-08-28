@@ -33,6 +33,7 @@
 
 .projectLink {
   text-decoration: none;
+  display: inline-block;
 }
 
 .imageContainer img {

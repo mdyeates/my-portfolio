@@ -1,12 +1,13 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
 import Loader from "./pages/loader/loader";
 import { useState } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 
+// Components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Landing from "./pages/landing/Landing";
 import Portfolio from "./pages/portfolio/Portfolio";
+import ProjectDetails from "./pages/portfolio/ProjectDetails";
 import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
@@ -48,6 +49,7 @@ function App() {
               }
             />
             <Route path="/page-not-found" element={<PageNotFound />} />
+            <Route path="/portfolio/:projectTitle" element={<ProjectDetails />} />
             <Route path="*" element={<Navigate to="/page-not-found" />} />
           </Routes>
           <Footer />

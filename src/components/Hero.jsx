@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import landingImage from "../images/suit.png";
-import SocialIcons from "../components/SocialIcons";
+import SocialIcons from "./SocialIcons";
 
 const Hero = ({ name }) => {
   const styles = {

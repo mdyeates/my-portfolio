@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiGitRepoForked } from "react-icons/bi";
-import SocialIcons from "../components/SocialIcons";
+import SocialIcons from "./SocialIcons";
 const Footer = () => {
   const date = new Date();
   const currentYear = date.getFullYear();
