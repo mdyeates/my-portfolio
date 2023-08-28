@@ -26,11 +26,28 @@ function App() {
 
   const [showLoader, setShowLoader] = useState(true);
 
+  const [originalTitle, setOriginalTitle] = useState();
+
   useEffect(() => {
     if (location.pathname !== "/") {
       setShowLoader(false);
     }
-  }, [location]);
+
+    if (!originalTitle) {
+      setOriginalTitle(document.title);
+    }
+
+    const handleTabChange = () => {
+      if (document.hidden) {
+        document.title = "👋🏻 Git pulling you back in!";
+      } else {
+        document.title = originalTitle;
+      }
+    };
+
+    window.addEventListener("visibilitychange", handleTabChange);
+    return () => window.removeEventListener("visibilitychange", handleTabChange);
+  }, [location, originalTitle]);
 
   return (
     <>
