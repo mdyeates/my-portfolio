@@ -79,13 +79,6 @@
 }
 .contentContainer .btn {
   margin-top: var(--sm-spacing);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contentContainer .btn:hover .arrow-icon {
-  transform: translate(3px, -3px);
 }
 
 .arrow-icon {

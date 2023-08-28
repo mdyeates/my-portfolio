@@ -33,6 +33,7 @@
 
 .projectLink {
   text-decoration: none;
+  display: inline-block;
 }
 
 .imageContainer img {
@@ -55,10 +56,6 @@
   padding: 10px 0;
 }
 
-.githubLink {
-  text-decoration: none;
-}
-
 .projectCard::before {
   content: "";
   display: block;
@@ -72,7 +69,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.closeModal {
+/* .closeModal {
   position: absolute;
   top: 40px;
   right: 40px;
@@ -80,19 +77,26 @@
 
 .closeModal:hover {
   filter: brightness(100);
-}
+} */
 
-.modalTitle {
+/* .modalTitle {
   text-align: left;
   margin-bottom: var(--sm-spacing);
   color: white;
   white-space: nowrap;
   font-size: 30px;
+} */
+
+.projectDetails {
+  background-color: var(--bg2-color);
+  padding: var(--spacing);
+  text-align: center;
 }
 
-.projectDescription {
+.projectBody {
   line-height: 2;
   text-align: left;
+  color: var(--secondary-text-color);
 }
 
 .tech {
@@ -100,7 +104,11 @@
   text-align: left;
 }
 
-.modalBtns {
+.paragraph {
+  margin-bottom: 1em;
+}
+
+/* .modalBtns {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -125,7 +133,7 @@
 .modalBtns .btn:last-child:hover {
   background-color: var(--hl-color);
   color: var(--text-color);
-}
+} */
 
 .technology {
   background-color: #4ea6a027;
