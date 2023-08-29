@@ -1,8 +1,18 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import Image from "./Image";
 import { FiArrowUpRight } from "react-icons/fi";
+import Image from "./Image";
+
+/**
+ * Represents a project card component.
+ *
+ * @component
+ * @param {string} title - The title of the project.
+ * @param {string} image - The image source for the project thumbnail.
+ * @param {string} color - The background color of the project card.
+ * @param {number} id - The unique identifier of the project.
+ */
 
 const ProjectCard = ({ title, image, color, id }) => {
   const [ref, inView] = useInView({

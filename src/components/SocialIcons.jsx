@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
 
+/**
+ * Represents a component displaying social media icons.
+ *
+ * This component displays social media icons with animation effects.
+ *
+ * @component
+ */
+
 const SocialIcons = () => {
+  // Define styles for the icons
   const styles = {
     icon: {
       textDecoration: "none",
@@ -13,6 +22,7 @@ const SocialIcons = () => {
   return (
     <div className="socialIcons" style={styles.socialIcons}>
       <a className="icon" style={styles.icon} href="https://github.com/mdyeates">
+        {/* GitHub Icon */}
         <motion.i
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -23,6 +33,7 @@ const SocialIcons = () => {
         ></motion.i>
       </a>
       <a className="icon" style={styles.icon} href="https://www.linkedin.com/in/mdyeates/">
+        {/* LinkedIn Icon */}
         <motion.i
           initial={{ y1: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -33,6 +44,7 @@ const SocialIcons = () => {
         ></motion.i>
       </a>
       <a className="icon" style={styles.icon} href="https://www.instagram.com/michael.yeates/">
+        {/* Instagram Icon */}
         <motion.i
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -43,6 +55,7 @@ const SocialIcons = () => {
         ></motion.i>
       </a>
       <a className="icon" style={styles.icon} href="https://twitter.com/mdyeates">
+        {/* Twitter Icon */}
         <motion.i
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

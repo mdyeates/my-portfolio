@@ -1,17 +1,25 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { NavLink } from "react-router-dom";
-// Components
 import Button from "./Button";
-// Assets
 import aboutMeImg from "../images/aboutme.jpeg";
 
+/**
+ * Represents the About Me section.
+ * Displays information about the user.
+ *
+ * @component
+ * @param {string} name - The name of the user.
+ */
+
 const AboutMe = ({ name }) => {
+  // Using react-intersection-observer to determine if the component is in view
   const [ref, inView] = useInView({
     threshold: 0.4,
     triggerOnce: true,
   });
 
+  // Variants for staggered animations
   const staggerVariants = {
     initial: { opacity: 0 },
     animate: {
@@ -22,6 +30,7 @@ const AboutMe = ({ name }) => {
     },
   };
 
+  // Variants for paragraph animations
   const paragraphVariants = {
     initial: { y: 20, opacity: 0 },
     animate: { y: 0, opacity: 1 },
@@ -39,18 +48,23 @@ const AboutMe = ({ name }) => {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             whileHover={{ scale: 1.05 }}
           >
+            {/* Display the personal image */}
             <motion.img src={aboutMeImg} alt={name} />
           </motion.div>
           <div className="personalInfo col-12 col-lg-6">
             <motion.div className="contentContainer" variants={staggerVariants}>
+              {/* Display greeting and job title with animation */}
               <motion.h4 variants={paragraphVariants}>Nice to meet you! 👋🏻</motion.h4>
               <motion.h5 variants={paragraphVariants}>I'm a Software Engineer at Amazon.</motion.h5>
+
+              {/* Display content description with animation */}
               <motion.div
                 className="contentDescription"
                 variants={staggerVariants}
                 initial="initial"
                 animate={inView ? "animate" : "initial"}
               >
+                {/* Paragraphs with animation */}
                 <motion.p variants={paragraphVariants}>
                   Today, I find myself knee-deep in an exhilarating chapter of my journey as a degree apprentice at the
                   tech titan, <span style={{ color: "var(--hl-color)" }}> Amazon</span>. My playground? The captivating
@@ -72,6 +86,8 @@ const AboutMe = ({ name }) => {
                   provoke thought.
                 </motion.p>
               </motion.div>
+
+              {/* Button to view the portfolio */}
               <NavLink to="/portfolio">
                 <Button name="View Portfolio" />
               </NavLink>
