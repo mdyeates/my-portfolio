@@ -1,14 +1,25 @@
 import { useRef, useEffect } from "react";
 
+/**
+ * Represents a drawing canvas that creates trails as the user moves the mouse.
+ *
+ * @component
+ */
+
 const Draw = () => {
+  // Create a reference to the canvas element
   const canvasRef = useRef(null);
+  // Store the last position of the mouse
   const lastPositionRef = useRef(null);
 
   useEffect(() => {
+    // Get the canvas and its context
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
+    // Add a mousemove event listener to the canvas
     canvas.addEventListener("mousemove", (e) => {
+      // Set the drawing settings
       ctx.lineWidth = 0.1;
       ctx.lineCap = "round";
       ctx.strokeStyle = "#ffffff";
@@ -18,14 +29,16 @@ const Draw = () => {
 
       if (lastPositionRef.current) {
         const { x, y } = lastPositionRef.current;
+        // Move the pen to the last position and draw a line to the current position
         ctx.moveTo(x - canvas.offsetLeft, y - canvas.offsetTop);
         ctx.lineTo(pageX - canvas.offsetLeft, pageY - canvas.offsetTop);
         ctx.stroke();
       }
 
+      // Update the last position
       lastPositionRef.current = { x: pageX, y: pageY };
     });
-  }, []);
+  }, []); // Empty dependency array ensures this effect runs only once
 
   return (
     <canvas
