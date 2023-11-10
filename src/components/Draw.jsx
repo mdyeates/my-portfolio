@@ -20,10 +20,10 @@ const Draw = () => {
     // Add a mousemove event listener to the canvas
     canvas.addEventListener("mousemove", (e) => {
       // Set the drawing settings
-      ctx.lineWidth = 0.1;
+      ctx.lineWidth = 0.2;
       ctx.lineCap = "round";
-      ctx.strokeStyle = "#ffffff";
-      ctx.globalAlpha = 0.1;
+      ctx.strokeStyle = "#fff";
+      ctx.globalAlpha = 1;
 
       const { pageX, pageY } = e;
 

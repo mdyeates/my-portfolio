@@ -11,7 +11,7 @@ import NavLinks from "./NavLinks";
 
 const Header = () => {
   return (
-    <header className="header container">
+    <header className="header">
       {/* Link to the home page */}
       <NavLink to="/">
         {/* Animated logo */}

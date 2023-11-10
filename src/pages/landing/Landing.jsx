@@ -1,6 +1,5 @@
 import Hero from "../../components/Hero";
 import Draw from "../../components/Draw";
-import About from "../../components/AboutMe";
 
 /**
  * Represents the Landing page component.
@@ -33,7 +32,7 @@ const Landing = ({ name }) => {
       </main>
 
       {/* Display the about section */}
-      <About />
+      {/* <About /> */}
     </>
   );
 };

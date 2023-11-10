@@ -28,8 +28,10 @@ const ContactInfo = ({ name, email, location }) => {
       animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
     >
-      <h4 className="contentTitle">Contact Information</h4>
-      <p className="infoDescription">Let's connect and build something awesome together! </p>
+      <h4 className="contentTitle">Connect With Me</h4>
+      <p className="infoDescription">
+        Looking to build connections and share perspectives with talented developers working to create positive change.
+      </p>
       <ul className="listInfo">
         {/* Display Name */}
         <li>

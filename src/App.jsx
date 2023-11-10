@@ -5,7 +5,6 @@ import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Loader from "./pages/loader/loader";
 import Header from "./components/Header";
 import Landing from "./pages/landing/Landing";
-import Footer from "./components/Footer";
 import Portfolio from "./pages/portfolio/Portfolio";
 import ProjectDetails from "./pages/portfolio/[project]/ProjectDetails";
 import Resume from "./pages/resume/Resume";
@@ -107,8 +106,6 @@ function App() {
             {/* Fallback route for unknown paths */}
             <Route path="*" element={<Navigate to="/page-not-found" />} />
           </Routes>
-          {/* Footer */}
-          <Footer />
         </>
       )}
     </>

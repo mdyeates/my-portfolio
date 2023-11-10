@@ -1,6 +1,7 @@
 import PageHeader from "../../components/PageHeader";
 import Form from "../../components/Form";
 import ContactInfo from "../../components/ContactInfo";
+import Footer from "../../components/Footer";
 
 /**
  * Represents the Contact page component.
@@ -34,6 +35,7 @@ const Contact = ({ name, email, location }) => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
